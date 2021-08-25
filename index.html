@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="노블웍스">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="노블웍스">
+    <meta property="og:url" content="http://ossamuiux.com/rwd/novel/">
+    <meta property="og:image" content="http://ossamuiux.com/rwd/novel/images/logo.png">
+    <meta property="og:description" content="노블웍스">
+    <title>노블웍스</title>
+    <!-- <link rel="apple-touch-icon-precomposed" href="touch_icon.png"> -->
+    <link id="favicon" rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/common.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+<body>
+    <div id="skipNavi">
+        <a href="#container">본문바로가기</a>
+    </div>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_inner">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="노블웍스"></a></h1>
+                <nav class="gnb">
+                    <ul class="depth1">
+                        <li>
+                            <a href="#">COMPANY</a>
+                            <ul class="depth2">
+                                <li><a href="#">회사정보</a></li>
+                                <li><a href="#">특허사항</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">BUSINESS</a>
+                            <ul class="depth2">
+                                <li><a href="#">제품개발 생산</a></li>
+                                <li><a href="#">특허사항</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">PRODUCT</a>
+                            <ul class="depth2">
+                                <li><a href="#">ALL</a></li>
+                                <li><a href="#">특허사항</a></li>
+                                <li><a href="#">특허사항</a></li>
+                                <li><a href="#">특허사항</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">THCHNOLOGY</a>
+                            <ul class="depth2">
+                                <li><a href="#">UV LED 살균</a></li>
+                                <li><a href="#">특허사항</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">CONTACT US</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="util_wrap">
+                    <ul class="lang">
+                        <li><a href="#">ENG</a></li>
+                        <li class="active"><a href="#">KOR</a></li>
+                    </ul>
+                    <a class="btn_sitemap" href="#">
+                        <em class="blind">사이트맵 열기</em>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <div class="sitemap_wrap">
+                        <div class="sitemap">
+                            <h2>사이트맵</h2>
+                            <div class="list_wrap">
+                                <dl>
+                                    <dt>COMPANY</dt>
+                                    <dd><a href="#">회사정보</a></dd>
+                                    <dd><a href="#">특허사항</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt>BUSINESS</dt>
+                                    <dd><a href="#">회사정보</a></dd>
+                                    <dd><a href="#">특허사항</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt>PRODUCT</dt>
+                                    <dd><a href="#">All</a></dd>
+                                    <dd><a href="#">특허사항</a></dd>
+                                    <dd><a href="#">특허사항</a></dd>
+                                    <dd><a href="#">특허사항</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt>TECHNOLOGY</dt>
+                                    <dd><a href="#">UV LED 살균</a></dd>
+                                    <dd><a href="#">특허사항</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt>CONTACT</dt>
+                                    <dd><a href="#">Contact us</a></dd>
+                                </dl>
+                            </div>
+                            <button class="btn_close" type="button">
+                                <span class="blind">사이트맵닫기</span>
+                                <i class="material-icons">clear</i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn_side" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <i class="blind">사이드메뉴열기</i>
+                </button>
+            </div>
+            <div class="side_menu">
+                <ul class="depth1">
+                    <li>
+                        <a href="#">Company<i class="material-icons add">add</i><i class="material-icons remove">remove</i></a>
+                        <ul class="depth2">
+                            <li><a href="http://naver.com" target="_blank">회사정보</a></li>
+                            <li><a href="#">특허사항</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Business<i class="material-icons add">add</i><i class="material-icons remove">remove</i></a>
+                        <ul class="depth2">
+                            <li><a href="#">제품개발 생산</a></li>
+                            <li><a href="#">특허사항</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Product<i class="material-icons add">add</i><i class="material-icons remove">remove</i></a>
+                        <ul class="depth2">
+                            <li><a href="#">ALL</a></li>
+                            <li><a href="#">특허사항</a></li>
+                            <li><a href="#">특허사항</a></li>
+                            <li><a href="#">특허사항</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Technology<i class="material-icons add">add</i><i class="material-icons remove">remove</i></a>
+                        <ul class="depth2">
+                            <li><a href="#">UV LED 살균</a></li>
+                            <li><a href="#">특허사항</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Contact us<i class="material-icons add">add</i><i class="material-icons remove">remove</i></a>
+                        <ul class="depth2">
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div id="container">
+            <section class="main_slider_wrap">
+                <h2 class="blind">메인슬라이더</h2>
+                <div class="swiper-container main_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <div class="txt_wrap">
+                                <p>GLOBAL BUSINESS</p>
+                                <h3>
+                                    <em class="txt_green">N</em>OVEL<br><em class="txt_blue">W</em>ORKS
+                                </h3>
+                            </div>
+                            <img class="img_m" src="images/main_visual_01_m.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <div class="txt_wrap">
+                                <p>GLOBAL BUSINESS</p>
+                                <h3>
+                                    <em class="txt_green">N</em>OVEL<br><em class="txt_blue">W</em>ORKS
+                                </h3>
+                            </div>
+                            <img class="symbol" src="images/main_visual_02_prd.png" alt="">
+                            <img class="img_m" src="images/main_visual_02_m.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="btn_wrap">
+                        <div class="swiper-button-prev btn_arrow"><i class="material-icons">navigate_before</i></div>
+                        <div class="swiper-button-next btn_arrow"><i class="material-icons">navigate_next</i></div>
+                    </div>
+                </div>
+            </section>
+            <section class="main_com">
+                <div class="left_com">
+                    <div class="txt_con">
+                        <h3>제품기획·개발·생산</h3>
+                        <ul>
+                            <li>UV 소독</li>
+                            <li>CLEAN</li>
+                            <li>소형가전</li>
+                            <li>BEAUTY</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right_com">
+                    <div class="bg bg2">
+                        <div class="txt_wrap">
+                            <p>국내를 넘어<br>세계로 도약하는 기업<br><em class="txt_green">N</em>OVEL<em class="txt_blue">W</em>ORKS</p>
+                        </div>
+                    </div>
+                    <div class="txt_box">
+                        <div class="txt_con">
+                            <h3>Research &amp; Devlope</h3>
+                            <ul>
+                                <li>센서 개발</li>
+                                <li>UV LED 적용 기술</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_com right_com2">
+                    <div class="bg bg1">
+                        
+                    </div>
+                    <div class="txt_box">
+                        <div class="txt_con">
+                            <h3>ODM / OEM</h3>
+                            <ul>
+                                <li>제품 기획</li>
+                                <li>금형 설계</li>
+                                <li>금형 설계</li>
+                                <li>금형 설계</li>
+                                <li>금형 설계</li>
+                                <li>금형 설계</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main_com_m">
+                <ul class="list_com">
+                    <li><h3>제품기획·개발·생산</h3></li>
+                    <li>
+                        <h3>Research &amp; Devlope</h3>
+                        <ul class="list_txt">
+                            <li>센서 개발</li>
+                            <li>UV LED 적용 기술</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>ODM / OEM</h3>
+                        <ul class="list_txt">
+                            <li>제품 기획</li>
+                            <li>금형 설계</li>
+                            <li>금형 설계</li>
+                            <li>금형 설계</li>
+                            <li>금형 설계</li>
+                            <li>금형 설계</li>
+                        </ul>
+                    </li>
+                    <li><h3>NOVEL WORKS</h3></li>
+                    <li><img src="images/main_con01_img05_m.jpg" alt=""></li>
+                </ul>
+            </section>
+            <section class="main_process">
+                <h2 class="main_tit">DEV.PROCESS</h2>
+                <p class="main_sub_tit">노블웍스는 체계화된 개발 프로세스로 품질좋은 상품을 제작합니다.</p>
+                <div class="con_wrap">
+                    <div class="process_con">
+                        <ul class="process_list">
+                            <li class="active">
+                                <div class="con_img">
+                                    <img src="images/main_con02_icon01.jpeg" alt="">
+                                </div>
+                                <span class="con_dot"></span>
+                                <p><em>01</em><br>제품기획</p>
+                            </li>
+                            <li>
+                                <div class="con_img">
+                                    <img src="images/main_con02_icon02.jpeg" alt="">
+                                </div>
+                                <span class="con_dot"></span>
+                                <p><em>02</em><br>디자인</p>
+                            </li>
+                            <li>
+                                <div class="con_img">
+                                    <img src="images/main_con02_icon03.jpeg" alt="">
+                                </div>
+                                <span class="con_dot"></span>
+                                <p><em>03</em><br>기구 설계</p>
+                            </li>
+                            <li>
+                                <div class="con_img">
+                                    <img src="images/main_con02_icon04.jpeg" alt="">
+                                </div>
+                                <span class="con_dot"></span>
+                                <p><em>04</em><br>회로 개발</p>
+                            </li>
+                            <li>
+                                <div class="con_img">
+                                    <img src="images/main_con02_icon05.jpeg" alt="">
+                                </div>
+                                <span class="con_dot"></span>
+                                <p><em>05</em><br>시제품 제작</p>
+                            </li>
+                            <li>
+                                <div class="con_img">
+                                    <img src="images/main_con02_icon06.jpeg" alt="">
+                                </div>
+                                <span class="con_dot"></span>
+                                <p><em>06</em><br>금형 제작</p>
+                            </li>
+                            <li>
+                                <div class="con_img">
+                                    <img src="images/main_con02_icon07.jpeg" alt="">
+                                </div>
+                                <span class="con_dot"></span>
+                                <p><em>07</em><br>패키지 제작</p>
+                            </li>
+                            <li>
+                                <div class="con_img">
+                                    <img src="images/main_con02_icon08.jpeg" alt="">
+                                </div>
+                                <span class="con_dot"></span>
+                                <p><em>08</em><br>양산품 제작</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="main_develope">
+                <h2 class="main_tit"><em class="txt_green">D</em>EVELOPMENT <em class="txt_blue">I</em>NTRODUCTION</h2>
+                <!-- <div class="swiper-container develope_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <div class="development_con">
+                                <div class="development_img">
+                                    <span>
+                                        <img src="images/main_con03_img05.jpeg">
+                                    </span>
+                                </div>
+                                <div class="development_text">
+                                    <span>
+                                        <img src="images/main_con03_img01_prd.png" alt="product_01">
+                                    </span>
+                                    <div class="inner_txt">
+                                        <h4>광촉매살균</h4>
+                                        <p>노블웍스만의 차별화 된 광촉매 살균 기술. <br>
+                                            광촉매 살균 [UV-A]은 촉매작용을 갖게 되는 물질로 <br>
+                                            반영구적 사용이 가능하고, 인체에 무해합니다.</p>
+                                    </div>
+                                    <a href="#" class="more_btn">+</a>
+                                </div>
+                            </div>
+                            <span class="slide_track_bg"></span>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            2페이지입니다
+                        </div>
+                        <div class="swiper-slide slide3">
+                            3페이지입니다
+                        </div>
+                    </div>
+                    <div class="btn_wrap">
+                        <div class="swiper-button-prev btn_arrow"><i class="material-icons">navigate_before</i></div>
+                        <div class="swiper-button-next btn_arrow"><i class="material-icons">navigate_next</i></div>
+                    </div>
+                </div> -->
+                
+                <div class="develope_img_slider">
+                        <div class="develope_img"><span><img src="images/main_con03_img06.jpeg" alt="노블웍스 대형이미지_01"></span></div>
+                        <div class="develope_img"><span><img src="images/main_con03_img01.jpeg" alt="노블웍스 대형이미지_02"></span></div>
+                        <div class="develope_img"><span><img src="images/main_con03_img05.jpeg" alt="노블웍스 대형이미지_03"></span></div>
+                    </div>
+                    <div class="develope_tools">
+                        <div class="develope_prev"></div>
+                        <div class="develope_next"></div>
+                    </div> 
+                <div class="develope_con">   
+                    <div class="develope_txt_slider">
+                        <div class="develope_txt"><h4>NOVEL WORKS</h4></div>
+                        <div class="develope_txt">your content</div>
+                        <div class="develope_txt">your content</div>
+                    </div>
+                      
+                </div>
+            </section>
+            <section class="main_contact">
+                <div class="main_contact_inner">
+                    <h3>온라인 상담신청</h3>
+                    <div class="contact_table">
+                        <form>
+                            <fieldset>
+                                <legend>온라인 상담신청</legend>
+                                <div class="contact_inner">
+                                    <div class="contact_left_inner">
+                                        <div class="left_input_box">
+                                            <ul>
+                                                <li>
+                                                    <div class="input_text">
+                                                        <label for="name">이름</label>
+                                                        <input id="name" class="" placeholder="담당자 성함을 입력하세요.">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="input_text">
+                                                        <label for="company">회사명</label>
+                                                        <input id="company" class="" placeholder="회사명을 입력하세요.">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="input_text">
+                                                        <label for="phone_n">연락처</label>
+                                                        <input id="phone_n" class="" placeholder="연락처를'-'없이 입력하세요.">
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="input_text">
+                                                        <label for="product">문의상품</label>
+                                                        <select>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                            <option>5</option>
+                                                            <option>6</option>
+                                                            <option>7</option>
+                                                            <option>8</option>
+                                                            <option>9</option>
+                                                            <option>10</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="agreement_wrap">
+                                            <a href="#" class="contact_view">개인정보처리방침</a>
+                                            <label><input type="checkbox">개인정보처리방침에 동의합니다.</label>
+                                        </div>
+                                    </div>
+                                    <div class="contact_right_inner">
+                                        <span>문의내용</span>
+                                        <textarea placeholder="문의하실 내용을 입력해주세요.(100자 내외)"></textarea>
+                                        <button type="submit" class="submit_text">상담 신청하기</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/main.js?v=<?php echo time(); ?>"></script>
+</body>
+</html>

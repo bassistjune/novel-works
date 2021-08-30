@@ -12,14 +12,19 @@
     <meta property="og:image" content="http://ossamuiux.com/rwd/novel/images/logo.png">
     <meta property="og:description" content="노블웍스">
     <title>노블웍스</title>
-    <!-- <link rel="apple-touch-icon-precomposed" href="touch_icon.png"> -->
+    <!-- 파비콘 -->
     <link id="favicon" rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- 폰트 -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 슬라이더 -->
     <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/common.css?v=<?php echo time(); ?>">
+    <!-- 슬릭슬라이더 -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
@@ -83,8 +88,8 @@
                         <span></span>
                         <span></span>
                     </a>
-                    <div class="sitemap_wrap">
-                        <div class="sitemap">
+                    <div class="sitemap_wrap popup_wrap">
+                        <div class="sitemap popup">
                             <h2>사이트맵</h2>
                             <div class="list_wrap">
                                 <dl>
@@ -377,7 +382,8 @@
                     </div>
                 </div> -->
                 
-                <div class="develope_img_slider">
+                <div class="develope_con">   
+                    <div class="develope_img_slider">
                         <div class="develope_img"><span><img src="images/main_con03_img06.jpeg" alt="노블웍스 대형이미지_01"></span></div>
                         <div class="develope_img"><span><img src="images/main_con03_img01.jpeg" alt="노블웍스 대형이미지_02"></span></div>
                         <div class="develope_img"><span><img src="images/main_con03_img05.jpeg" alt="노블웍스 대형이미지_03"></span></div>
@@ -386,13 +392,33 @@
                         <div class="develope_prev"></div>
                         <div class="develope_next"></div>
                     </div> 
-                <div class="develope_con">   
                     <div class="develope_txt_slider">
-                        <div class="develope_txt"><h4>NOVEL WORKS</h4></div>
-                        <div class="develope_txt">your content</div>
-                        <div class="develope_txt">your content</div>
+                        <div class="develope_txt">
+                            <div class="develope_txt_inner">
+                                <span class="product_img"></span>
+                                <h4>NOVEL WORKS</h4>
+                            </div>
+                        </div>
+                        <div class="develope_txt">
+                            <div class="develope_txt_inner">
+                                <span class="product_img"><img src="images/main_con03_img11_prd.png" alt="product_01"></span>
+                                <h5>UV LED</h5>
+                                <p><span>UV LED기술을 선도하는 기업 <br>
+                                    노블웍스는 차별화된 기술력을 통해 <br>
+                                    고객사와 함께 성장해나갑니다.</span></p>
+                            </div>
+                        </div>
+                        <div class="develope_txt">
+                            <div class="develope_txt_inner">
+                                <span class="product_img"><img src="images/main_con03_img01_prd.png" alt="product_02"></span>
+                                <h5 class="small_tit">광촉매 살균</h5>
+                                <p><span>노블웍스만의 차별화 된 광촉매 살균 기술. <br>
+                                    광촉매 살균 [UV-A]은 촉매작용을 갖게 되는 물질로 <br>
+                                    반영구적 사용이 가능하고, 인체에 무해합니다.</span></p>
+                            </div>
+                            </div>
                     </div>
-                      
+                    
                 </div>
             </section>
             <section class="main_contact">
@@ -444,8 +470,24 @@
                                             </ul>
                                         </div>
                                         <div class="agreement_wrap">
-                                            <a href="#" class="contact_view">개인정보처리방침</a>
-                                            <label><input type="checkbox">개인정보처리방침에 동의합니다.</label>
+                                            <a href="#" class="contact_view">개인정보처리방침<span class="xe_icon"></span></a>
+                                            <div class="agree_popup_wrap popup_wrap">
+                                                <div class="agree_popup popup">
+                                                    <h2>개인정보처리방침</h2>
+                                                    <div class="list_wrap">
+                                                        <div class="list_wrap_inner">
+                                                            <a href="#">https://www.privacy.go.kr/a3sc/per/inf/perInfStep02.do</a><p>이 주소로 들어가셔서 맞춤형 개인정보 처리방침을 만들어서 등록하세요.</p>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn_close" type="button">
+                                                        <span class="blind">사이트맵닫기</span>
+                                                        <i class="material-icons">clear</i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="checkbox_wrap">
+                                                <input type="checkbox" id="agreement_btn"><label for="agreement_btn">개인정보처리방침에 동의합니다.<span class="xe_icon"></span></label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="contact_right_inner">

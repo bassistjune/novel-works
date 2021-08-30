@@ -139,7 +139,7 @@
     $('.develope_img_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
         centerMode: true,
         asNavFor: '.develope_txt_slider',
         prevArrow: '.develope_prev',
@@ -149,13 +149,23 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         asNavFor: '.develope_img_slider',
+        arrows: false,
         dots: false,
         fade: true,
         centerMode: true,
         focusOnSelect: true
     });
 
-    
+    // 헤더 sitemap
+    $('.contact_view').on('click', function() {
+        $('body').addClass('on');
+        $('.agree_popup_wrap').css('display','flex');
+    });
+
+    $('.agree_popup_wrap .btn_close').on('click', function() {
+        $('body').removeClass('on');
+        $('.agree_popup_wrap').hide();
+    });
 
 
 

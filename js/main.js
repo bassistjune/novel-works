@@ -141,9 +141,10 @@
         slidesToScroll: 1,
         arrows: true,
         centerMode: true,
+        centerPadding: false,
         asNavFor: '.develope_txt_slider',
         prevArrow: '.develope_prev',
-        nextArrow: '.develope_next'
+        nextArrow: '.develope_next',
     });
     $('.develope_txt_slider').slick({
         slidesToShow: 1,
